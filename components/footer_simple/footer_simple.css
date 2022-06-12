@@ -1,0 +1,50 @@
+:host {
+    background: var(--col_dark_400);
+    color: hsl(0 0% 90%);
+}
+
+ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 15rem;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+li * {
+    font-family: var(--ff_spice);
+}
+
+.main_footer {
+    margin-top: auto;
+    padding: 1.5em;
+    position: relative;
+}
+
+.main_footer::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--deco_line_height, .2rem);
+    background-color: var(--col_prime_400, greenyellow);
+}
+
+.main_footer ul {
+    margin: .5em 0;
+    list-style: none;
+}
+
+p {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+i {
+    /*color: var(--col_prime_500, green);*/
+}
+
+a {
+    color: var(--col_prime_300);
+}

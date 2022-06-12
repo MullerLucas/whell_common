@@ -1,0 +1,126 @@
+/* ================================================================================================ */
+/* definitions */
+/* ================================================================================================ */
+
+@font-face {
+    font-family: Orbitron;
+    src: url("/assets/fonts/Orbitron/static/Orbitron-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Orbitron;
+    src: url("/assets/fonts/Orbitron/static/Orbitron-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    /*--gap: 1rem;*/
+    --col_dark_200: hsl(0, 0%, 29%);
+    --col_dark_300: hsl(0, 0%, 23%);
+    --col_dark_400: hsl(0, 0%, 10%);
+    --col_light_400: hsl(0, 0%, 100%);
+    --col_light_600: hsl(0, 0%, 85%);
+    --col_light_700: hsl(0, 0%, 70%);
+
+    /*--col_prime_300: hsl(137, 100%, 63%);*/
+    /*--col_prime_400: hsl(137, 73%, 50%);*/
+    /*--col_prime_800: hsl(137, 86%, 30%);*/
+
+    /*--col_sec_400: hsl(0, 72%, 50%);*/
+    /*--col_sec_800: hsl(0, 100%, 28%);*/
+
+    --col_prime_300: hsl(137, 100%, 63%);
+    --col_prime_400: #22dd57;
+    --col_prime_500: #00b12d;
+    --col_prime_600: #008600;
+    --col_prime_700: #005d00;
+    --col_prime_800: #003700;
+
+    --col_sec_400: #ff004e;
+    --col_ter_400: #00aaff;
+
+    --fs_xl: 5rem;
+    --fs_600: 1.5rem;
+    --fs_500: 1.25rem;
+    --fs_400: 1rem;
+
+    --ff_prime: serif;
+    --ff_spice: Orbitron;
+}
+
+
+
+/* ================================================================================================ */
+/* utils */
+/* ================================================================================================ */
+
+/* flex */
+/* ---- */
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+
+/* accessibility */
+/* ------------- */
+.sr_only {
+    display: none;
+}
+
+
+/* scrolling */
+/* --------- */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.secret_scroller::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.secret_scroller {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+/* ================================================================================================ */
+/* global style */
+/* ================================================================================================ */
+
+html {
+    height: 100%;
+}
+
+body {
+    background: var(--col_light_400);
+    color: var(--col_dark_400);
+
+    overflow-x: hidden; /* prevent any possible overflows -> right nav */
+
+    /* footer */
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    font-size: var(--fs_400);
+    font-family: var(--ff_prime);
+}
+
+footer-main {
+    margin-top: auto;
+}
+
+.content_container {
+    max-width: min(80%, 50em);
+    margin: 4rem auto;
+}
+
+.content_container_full {
+}
+
+h1, h2, h3 {
+    font-family: var(--ff_spice)
+}
