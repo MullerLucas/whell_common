@@ -53,38 +53,6 @@
 
 
 
-/* ================================================================================================ */
-/* utils */
-/* ================================================================================================ */
-
-/* flex */
-/* ---- */
-.flex {
-    display: flex;
-    gap: var(--gap, 1rem);
-}
-
-
-/* accessibility */
-/* ------------- */
-.sr_only {
-    display: none;
-}
-
-
-/* scrolling */
-/* --------- */
-/* Hide scrollbar for Chrome, Safari and Opera */
-.secret_scroller::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.secret_scroller {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
 
 /* ================================================================================================ */
 /* global style */
@@ -109,7 +77,7 @@ body {
     font-family: var(--ff_prime);
 }
 
-footer-main {
+footer-simple {
     margin-top: auto;
 }
 
@@ -118,8 +86,7 @@ footer-main {
     margin: 4rem auto;
 }
 
-.content_container_full {
-}
+.content_container_full { }
 
 h1, h2, h3 {
     font-family: var(--ff_spice)
