@@ -3,18 +3,37 @@
 /* ================================================================================================ */
 
 @font-face {
-    font-family: Orbitron;
-    src: url("/assets/fonts/Orbitron/static/Orbitron-Regular.ttf");
+    font-family: roboto;
+    src: url("/assets/fonts/roboto/roboto-regular-webfont.woff2") format("woff2"),
+         url("/assets/fonts/roboto/roboto-regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: Orbitron;
-    src: url("/assets/fonts/Orbitron/static/Orbitron-Bold.ttf");
-    font-weight: bold;
+    font-family: alfaslabone;
+    src: url("/assets/fonts/alfaslabone/alfaslabone-regular-webfont.woff2") format("woff2"),
+         url("/assets/fonts/alfaslabone/alfaslabone-regular-webfont.woff") format("woff");
+    font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: bebas_neue;
+    src: url("/assets/fonts/bebas_neue/bebasneue-regular-webfont.woff2") format("woff2"),
+         url("/assets/fonts/bebas_neue/bebasneue-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: orbitron;
+    src: url("/assets/fonts/orbitron/orbitron-variablefont_wght-webfont.woff2") format("woff2"),
+         url("/assets/fonts/orbitron/orbitron-variablefont_wght-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 :root {
     /*--gap: 1rem;*/
@@ -39,6 +58,7 @@
     --col_prime_700: #005d00;
     --col_prime_800: #003700;
 
+    --col_sec_200: #ff8caa;
     --col_sec_400: #ff004e;
     --col_ter_400: #00aaff;
 
@@ -47,8 +67,8 @@
     --fs_500: 1.25rem;
     --fs_400: 1rem;
 
-    --ff_prime: serif;
-    --ff_spice: Orbitron;
+    --ff_prime: roboto;
+    --ff_spice: orbitron;
 }
 
 
